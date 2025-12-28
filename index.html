@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Screens -->
+  <div id="home" class="screen active">
+    <h2>Hi, I'm Roshan</h2>
+    <p>CSE Student | Intern</p>
+  </div>
+
+  <div id="projects" class="screen">
+    <h2>Projects</h2>
+    <p>Offline Notes App</p>
+    <p>Portfolio Website</p>
+  </div>
+
+  <div id="skills" class="screen">
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript</p>
+  </div>
+
+  <div id="contact" class="screen">
+    <h2>Contact</h2>
+    <p>Email: example@gmail.com</p>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="nav">
+    <button onclick="show('home')">Home</button>
+    <button onclick="show('projects')">Projects</button>
+    <button onclick="show('skills')">Skills</button>
+    <button onclick="show('contact')">Contact</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
