@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 id="nameText">J. Mohamed Roshan Nabeez</h1>
+        <p>B.E CSE Student | Aspiring Web Developer</p>
+        <button id="colorBtn">Change Name Color</button>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+        <h2>About Me</h2>
+        <p id="aboutText">
+            I am a Diploma Computer Science and Engineering student.
+        </p>
+        <button id="aboutBtn">Read More</button>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Basic Java</li>
+            <li>MS Office</li>
+        </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section>
+        <h2>Contact</h2>
+        <button id="contactBtn">Show Contact</button>
+        <p id="contactText"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+    </footer>
+
+    <!-- JAVASCRIPT (FIXED WAY) -->
+    <script>
+        // Change name color
+        document.getElementById("colorBtn").onclick = function () {
+            document.getElementById("nameText").style.color = "yellow";
+        };
+
+        // Show more about me
+        document.getElementById("aboutBtn").onclick = function () {
+            document.getElementById("aboutText").innerHTML =
+                "I am a Diploma Computer Science and Engineering student with interest in web development. I enjoy creating simple and user-friendly websites using HTML, CSS, and JavaScript. I am currently learning front-end development and building small projects for internship and practical experience.";
+        };
+
+        // Show contact details
+        document.getElementById("contactBtn").onclick = function () {
+            document.getElementById("contactText").innerHTML =
+                "📧 Email:j.roshannabeez112@example.com <br> 📞 Phone: +91 8667625138";
+        };
+    </script>
+
+</body>
+</html>
